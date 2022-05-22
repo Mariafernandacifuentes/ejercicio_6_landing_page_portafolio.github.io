@@ -1,0 +1,161 @@
+/* :root {
+  --color-principal: rgb(255, 195, 208);
+  --color-secundario: rgb(252, 160, 191);
+  --color-logos:rgb(170, 117, 201);
+  --color-multimedia: rgb(199, 117, 158);
+  --color-texto: rgb(95, 15, 39);
+  --menu-tip: font-family: 'Truculenta', sans-serif;
+  --titulos-tip: font-family: 'Cookie', cursive;
+  --parrafo-tip: font-family: 'Handlee', cursive;
+  --color-graficos: rgb(150, 105, 113);
+} */
+
+/* Seccion bienvenidos */
+
+.bienvenida {
+  padding: 5.2em 5.2em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.row .to_secction2 {
+  font-size: 3em;
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.logo-column {
+  height: 32em;
+  align-self: center;
+  padding: 12em;
+}
+
+.info-column {
+  height: 32em;
+  color: rgb(95, 15, 39);
+  text-align: center;
+  padding: 9em;
+} 
+
+.info-column h1{
+  margin-bottom: 1em;
+  font-family: var(--titulos-tip);
+  font-size: 3em;
+} 
+
+.info-column p{
+  margin-bottom: 1em;
+  font-family: var(--parrafo-tip);
+  font-size: 1.4em;
+} 
+
+.info-column a{
+  font-size: 3em;
+  color: var(--color-texto);
+  padding-left: 0,7em;
+  font-size: 2em;
+} 
+
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-column {
+    height: 0;
+    padding: 5em;
+  }
+  
+  .info-column {
+    height: 26em;
+    padding: 4em 0em;
+  } 
+
+  .info-column h1{
+    margin-bottom: 1em;
+    font-family: var(--titulos-tip);
+    font-size: 2em;
+  } 
+  
+  .info-column p{
+    margin-bottom: 1em;
+    font-family: var(--parrafo-tip);
+    font-size: 1.4em;
+  } 
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+    .logo-column {
+      height: 0;
+      padding: 0em;
+    }
+    
+    .info-column {
+      height: 26em;
+      padding: 4em 0em;
+    } 
+  
+    .info-column h1{
+      margin-bottom: 1em;
+      font-family: var(--titulos-tip);
+      font-size: 2em;
+      margin-top: 3em;
+    } 
+    
+    .info-column p{
+      margin-bottom: 1em;
+      font-family: var(--parrafo-tip);
+      font-size: 1.2em;
+    } 
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+    .logo-column {
+      height: 0;
+      padding: 0em;
+  }
+
+.bienvenida {
+  padding: 5.199999999999999em 1.1999999999999993em;
+  padding-top: 2em;
+}
+
+.info-column {
+  height: 29em;
+  padding: 12em 0em;
+}
+
+    .info-column h1 {
+      margin-bottom: 1.1em;
+      font-family: var(--titulos-tip);
+      font-size: 1.5em;
+      margin-top: 1em;
+  }
+
+  .info-column p {
+    margin-bottom: 1em;
+    font-family: var(--parrafo-tip);
+    font-size: 1em;
+}
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@700&family=Handlee&family=Truculenta:opsz,wght@12..72,200&display=swap');
+
+:root {
+  --color-principal: rgb(255, 195, 208);
+  --color-secundario: rgb(252, 160, 191);
+  --color-logos:rgb(170, 117, 201);
+  --color-multimedia: rgb(199, 117, 158);
+  --color-texto: rgb(95, 15, 39);
+  --titulos-tip: 'Dancing Script', cursive;
+  --parrafo-tip: 'Handlee', cursive;
+  --color-graficos: rgb(156, 119, 126);
+  --tamaño-parrafo: 2em
+}
+
+/* Genaral Page */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-principal);
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Seccion Logos */
+.logos {
+    background-color: var(--color-logos)
+}
+
+/* Seccion Multimedia */
+.multimedia {
+    background-color: var(--color-multimedia)
+}
+
+/*Aca empieza el slider*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.swiper-slide img {
+  display: block;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*comienzo de resonsive*/
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #seccion1 {
+    font-family: var(--titulos-tip);
+  }
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+    .swiper-slide img {
+      display: block;
+      width: 110%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+
+  
+  

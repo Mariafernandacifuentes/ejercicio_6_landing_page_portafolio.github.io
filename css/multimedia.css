@@ -1,0 +1,46 @@
+/* :root {
+  --titulos-tip: font-family: 'Cookie', cursive;
+  --parrafo-tip: font-family: 'Handlee', cursive;
+  --color-graficos: rgb(150, 105, 113);
+}  */
+
+/* Seccion TRABAJOS Multimedia */
+
+.multimedia {
+  padding:  2em 2em;
+}
+.multimedia h1 {
+  color: var(--color-texto);
+  font-family: var(--titulos-tip);
+  margin-bottom: 2em;
+}
+
+.multimedia iframe {
+  width: 36em;
+  height: 20em;
+}
+
+.multimedia .wrap {
+  text-align: center;
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Aquí van las propiedades y valores según el dispositivo*/
+  .multimedia iframe {
+    width: 21em;
+    height: 20em;
+  }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+  /*Aquí van las propiedades y valores según el dispositivo*/
+  .multimedia iframe {
+    width: 15em;
+    height: 19em;
+  }
+}
