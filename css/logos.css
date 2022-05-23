@@ -1,0 +1,120 @@
+.logos {
+    padding: 10em 7em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+.logo-monarca {
+    height: 100px;
+    display: contents;
+}
+
+.logo-gimlet {
+    height: 100px;
+    display: contents;
+}
+
+.logo-mafe {
+    height: 100px;
+    display: contents;
+}
+
+.logos h1 {
+    font-family: var(--titulos-tip);
+    color: var(--color-texto);
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    padding-top: -8em;
+}
+
+.logos p {
+    font-family: var(--parrafo-tip);
+    color: var(--color-texto);
+    margin-bottom: 3em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.column > div a {
+    margin-top: 1em;
+    font-family: var(--menu-tip);
+    color: var(--color-texto);
+    font-size: 1.3em;
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Aquí van las propiedades y valores según el dispositivo*/
+  .logos {
+    padding: 4em 3em;
+}
+
+.logos h1 {
+    font-family: var(--titulos-tip);
+    color: var(--color-texto);
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: -8em;
+}
+
+.logos p {
+    font-family: var(--parrafo-tip);
+    color: var(--color-texto);
+    margin-bottom: 3em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.column > div a {
+    margin-top: 1em;
+    font-family: var(--menu-tip);
+    color: var(--color-texto);
+    font-size: 1.2em;
+}
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+  /*Aquí van las propiedades y valores según el dispositivo*/
+  .logos {
+    padding: 10em 1em;
+}
+
+.logos h1 {
+    font-family: var(--titulos-tip);
+    color: var(--color-texto);
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: -8em;
+    margin-top: -4em;
+}
+
+.logos p {
+    font-family: var(--parrafo-tip);
+    color: var(--color-texto);
+    margin-bottom: 3em;
+    font-size: 1em;
+    text-align: center;
+}
+}
