@@ -1,0 +1,164 @@
+:root {
+  --menu-tip: 'Truculenta', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(250, 217, 224);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  scroll-behavior: smooth;
+  font-family: var(--menu-tip);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(252, 160, 191);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 59px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.logo_menu{
+  width: 35%;
+}
+
+.topnav a:hover {
+  background-color: rgb(253, 211, 223);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(252, 160, 191);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  nav {
+    position: inherit;
+    width: 100%;
+    z-index: 2;
+    scroll-behavior: smooth;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  
+    nav {
+      position: inherit;
+      width: 100%;
+      z-index: 2;
+      scroll-behavior: smooth;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*Aquí van las propiedades y valores según el dispositivo*/
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  nav {
+    position: inherit;
+    width: 100%;
+    z-index: 2;
+    scroll-behavior: smooth;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Aquí van las propiedades y valores según el dispositivo*/
+/*Aquí van las propiedades y valores según el dispositivo*/
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+nav {
+  position: inherit;
+  width: 100%;
+  z-index: 2;
+  scroll-behavior: smooth;
+}
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
